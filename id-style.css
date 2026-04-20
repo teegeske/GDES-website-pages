@@ -1,0 +1,39 @@
+/* NOTE: this CSS file is for pages in the final project for GDES 2342 Interaction Design */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    /*border: 1px solid lightgray;*/
+}
+/* navbar */
+.leftnav {
+    z-index:2;
+    background-image: url('img/assets/upsidebarL.png');
+    display:flex;
+    position:absolute;
+    background-size: 100%;
+    width: 461px;
+    height:116px;
+    top:0vw;
+    left:0vw
+}
+.homecirc {
+    background-image: url('img/assets/navbar/homecirc2.png');
+    display: flex;
+    background-size: 100%;
+    width: 5.5vw;
+    height:5.4vw;
+    justify-content:center;
+    align-items:center;
+}
+.myheadnav {
+    background-image: url('img/assets/me2004.png');
+    background-color: transparent;
+    background-size: 100%;
+    width: 2.5vw;
+    height: 3.2vw;
+    margin-bottom: 0.75vw;
+}
+.myheadnav:hover {
+    transform: rotate(-20deg);
+}
