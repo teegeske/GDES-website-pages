@@ -3,8 +3,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 section {
-    /*border: 1px solid lightgray;*/
+    border: 2px solid lightgray;
 }
+
 /* navbar */
 .leftnav {
     z-index:2;
@@ -12,28 +13,131 @@ section {
     display:flex;
     position:absolute;
     background-size: 100%;
-    width: 461px;
-    height:116px;
+    width: 542px;
+    height:136px;
     top:0vw;
-    left:0vw
-}
-.homecirc {
-    background-image: url('img/assets/navbar/homecirc2.png');
+    left:0vw;
+    .homecirc {
+        background-image: url('img/assets/navbar/homecirc2.png');
+        display: flex;
+        background-size: 100%;
+        width: 5.5vw;
+        height:5.4vw;
+        justify-content:center;
+        align-items:center;
+    }
+    .myheadnav {
+        background-image: url('img/assets/me2004.png');
+        background-color: transparent;
+        background-size: 100%;
+        width: 2.5vw;
+        height: 3.2vw;
+        margin-bottom: 0.75vw;
+    }
+    .myheadnav:hover {
+        transform: rotate(-20deg);
+    }
+    .navbuttons {
+        display: flex;
+        flex-direction: row;
+        height: 3vw;
+        margin-top: 0.5vw;
+        align-items: center;
+        border: none;
+        .abtbut {
+            background-image: url('img/assets/navbar/abticon.png');
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-size: 100%;
+            width: 2.3vw;
+            height: 2.4vw;
+            padding-right: 0.25vw;
+        }
+        .abtbut:hover {
+            transform: rotate(-20deg);
+        }
+        .updicon {
+            background-image: url('img/assets/navbar/updicon.png');
+            background-color: transparent;
+            background-size: 100%;
+            width: 2.3vw;
+            height: 2.6vw;
+            padding-right: 0.25vw;
+        }
+        .updicon:hover {
+            transform: rotate(-20deg);
+        }
+        .linkicon {
+            background-image: url('img/assets/navbar/linkicon.png');
+            background-color: transparent;
+            background-size: 100%;
+            width: 2vw;
+            height: 2.35vw;
+            padding-right: 0.25vw;
+        }
+        .linkicon:hover {
+            transform: rotate(20deg);
+        }
+        .emmeicon {
+            background-image: url('img/assets/navbar/emmeicon.png');
+            background-color: transparent;
+            background-size: 100%;
+            width: 2vw;
+            height: 1.9vw;
+            padding-right: 0.25vw;
+        }
+        .emmeicon:hover {
+            transform: rotate(20deg);
+        }
+        }
+    }
+/*main stuff*/
+#parent {
     display: flex;
-    background-size: 100%;
-    width: 5.5vw;
-    height:5.4vw;
-    justify-content:center;
-    align-items:center;
-}
-.myheadnav {
-    background-image: url('img/assets/me2004.png');
-    background-color: transparent;
-    background-size: 100%;
-    width: 2.5vw;
-    height: 3.2vw;
-    margin-bottom: 0.75vw;
-}
-.myheadnav:hover {
-    transform: rotate(-20deg);
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .main-content-area {
+        width: 780px;
+        height: 780px;
+
+        /*.topfiller {
+            padding: 20px;
+            height: 5vw;
+            background-color: transparent;
+        }*/
+
+        .titlebox {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .mr-title {
+                width: auto;
+                height: auto;
+
+            }
+        }
+    }
+
+    .footer {
+        height: auto;
+        width: 780px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .copyright {
+            background-image: url('img/assets/copyright.png');
+            background-size: 100%;
+            height: 1.8vw;
+            width: 12vw;
+        }
+    }
 }
