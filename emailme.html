@@ -26,13 +26,28 @@
         <section class="titlebox">
             <section class="mr-title"><img src="img/assets/emailhead.png" alt="Email Me!" style="height:7vw;"></section>
         </section>
+        <h1 style="text-align: center">Welcome to the Email-O-Tron!</h1>
         <section class="emailarea">
             <section class="mr-email">
         <form>
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" value=""><br>
-            <label for="emad">Email:</label><br>
-            <input type="text" id="emad" name="emad" value="">
+            <div class="forumcol">
+            <div>
+                <div>
+                    <div class="inputbox">
+                        <textarea id="message" name="message" placeholder="Type your message here!"></textarea>
+                    </div>
+                </div>
+            <div class="inputbox" style="min-height: 55px;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="address" placeholder="your name">
+                <label for="address">Email:</label>
+                <input type="text" id="address" name="address" placeholder="your email address">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="address" placeholder="subject for email">
+            </div>
+            </div>
+            </div>
+            <input type="button" value="submit">
         </form>
             </section>
     </section>

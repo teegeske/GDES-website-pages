@@ -55,6 +55,7 @@ section {
             background-size: 100%;
             width: 2.3vw;
             height: 2.4vw;
+            margin-left: 0.25vw;
             padding-right: 0.25vw;
         }
         .abtbut:hover {
@@ -107,7 +108,7 @@ section {
 
     .main-content-area {
         width: 780px;
-        height: 780px;
+        height: 756px;
 
         /*.topfiller {
             padding: 20px;
@@ -125,6 +126,41 @@ section {
                 width: auto;
                 height: auto;
 
+            }
+        }
+        section.emailarea {
+            form {
+                div.forumcol {
+                    display: flex;
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        min-height: 200px;
+                        width: 100%;
+                        align-items: center;
+
+                        div.inputbox {
+                            width: 100%;
+                            display: flex;
+                            background-color: lightgray;
+                            border-radius: 15px;
+                            justify-content: space-evenly;
+                            flex-direction: row;
+                        }
+
+                        input {
+                            padding: 5px;
+                            font-family: Arial, Helvetica, sans-serif;
+                        }
+
+                        textarea {
+                            font-family: Arial, Helvetica, sans-serif;
+                            min-height: 180px;
+                            max-height: 180px;
+                            width: 90%;
+                        }
+                    }
+                }
             }
         }
     }
