@@ -157,8 +157,25 @@ section {
                             font-family: Arial, Helvetica, sans-serif;
                             min-height: 180px;
                             max-height: 180px;
+                            min-width: 754px;
+                            max-width: 754px;
                             width: 90%;
                         }
+                    }
+                }
+                div.formrow {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    div.keyboard {
+                        background-image: url("img/assets/emailme/keyboard.png");
+                        background-color: transparent;
+                        background-size: 100%;
+                        width: 450px;
+                        height: 180px;
+                    }
+                    input {
+                        width: 350px;
                     }
                 }
             }
