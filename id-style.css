@@ -211,7 +211,6 @@ section {
                     align-items: center;
                     justify-content: flex-end;
                     .galportA {
-                        background-color: darkblue;
                         background-size: 100%;
                         width: 160px;
                         height: 120px;
@@ -225,7 +224,6 @@ section {
                         border-image-source: url(img/assets/borders/galframeB.png);
                     }
                     .galportB {
-                        background-color: darkred;
                         background-size: 100%;
                         width: 120px;
                         height: 160px;
@@ -239,7 +237,6 @@ section {
                         border-image-source: url(img/assets/borders/galframeB.png);
                     }
                     .galportC {
-                        background-color: darkorange;
                         background-size: 100%;
                         width: 160px;
                         height: 160px;
