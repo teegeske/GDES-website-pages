@@ -18,8 +18,8 @@ section {
     display:flex;
     position:absolute;
     background-size: 100%;
-    width: 542px;
-    height:136px;
+    width: 490px;
+    height:120px;
     top:0vw;
     left:0vw;
     .homecirc {
@@ -152,7 +152,7 @@ section {
             background-color: transparent;
             background-size: 100%;
             height: 700px;
-            width: 490px;
+            width: 500px;
             form {
                 div.forumcol {
                     display: flex;
@@ -169,7 +169,7 @@ section {
                             border-radius: 15px;
                             flex-direction: column;
                             align-items: flex-start;
-                            padding-left: 127px;
+                            padding-left: 140px;
                             padding-top: 92px;
                         }
 
