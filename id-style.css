@@ -62,6 +62,19 @@ section {
         .abtbut:hover {
             transform: rotate(-20deg);
         }
+        .galicon {
+            background-image: url('img/assets/navbar/galnavoicon.png');
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-size: 100%;
+            width: 1.7vw;
+            height: 2.7vw;
+            margin-left: 0.25vw;
+            padding-right: 0.25vw;
+        }
+        .galicon:hover {
+            transform: rotate(20deg);
+        }
         .updicon {
             background-image: url('img/assets/navbar/updicon.png');
             background-color: transparent;
@@ -133,6 +146,7 @@ section {
 
             }
         }
+        /*email stuff*/
         section.emailarea {
             form {
                 div.forumcol {
@@ -187,12 +201,13 @@ section {
         }
         /*stuff for gallery*/
         .gallery-area {
-            height: 75%;
+            height: auto;
             width: 85%;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-around;
             background-color: #FFD4C9;
+            padding-top: 50px;
             border-image-slice: 250 250 250 250;
             border-image-width: 50px 50px 50px 50px;
             border-image-outset: 29px;
@@ -204,6 +219,7 @@ section {
                 width: 85%;
                 display: flex;
                 justify-content: space-evenly;
+                padding-bottom: 20px;
                 /*background-color: indianred;*/
                 .galcard {
                     display: flex;
@@ -223,6 +239,20 @@ section {
                     .galportA:hover {
                         border-image-source: url(img/assets/borders/galframeB.png);
                     }
+                    .galportAFalse {
+                        /*for this page, gallery icons that do not link to a page will display a red light*/
+                        background-size: 100%;
+                        width: 160px;
+                        height: 120px;
+                        border-image-slice: 224 112 112 112;
+                        border-image-width: 54px 24px 24px 23px;
+                        border-image-outset: 29px 9px 0px 9px;
+                        border-image-source: url(img/assets/borders/galframeA.png);
+                        border-image-repeat: repeat repeat;
+                    }
+                    .galportAFalse:hover {
+                        border-image-source: url(img/assets/borders/galframeC.png);
+                    }
                     .galportB {
                         background-size: 100%;
                         width: 120px;
@@ -234,7 +264,7 @@ section {
                         border-image-repeat: repeat repeat;
                     }
                     .galportB:hover {
-                        border-image-source: url(img/assets/borders/galframeB.png);
+                        border-image-source: url(img/assets/borders/galframeC.png);
                     }
                     .galportC {
                         background-size: 100%;
@@ -247,7 +277,7 @@ section {
                         border-image-repeat: repeat repeat;
                     }
                     .galportC:hover {
-                        border-image-source: url(img/assets/borders/galframeB.png);
+                        border-image-source: url(img/assets/borders/galframeC.png);
                     }
                 }
             }
