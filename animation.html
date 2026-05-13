@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Email Me!</title>
+    <title>Worms n' Dirt Animation</title>
     <link rel="icon" type="image/x-icon" href="img/TGFavicon.png">
     <meta name="description" content="Email Tyler Geske here!">
     <link href="id-style.css" rel="stylesheet" type="text/css" media="all">
@@ -14,11 +14,50 @@
         <a href="https://teegoobo.com"><div class="myheadnav"></div> </a>
     </div>
     <section class="navbuttons">
-        <a href="https://teegoobo.com/about"><div class="abtbut"></div></a>
-        <a href="https://teegoobo.com/linkpage"><div class="linkicon"></div></a>
-        <a href="https://teegoobo.com/site_updates"><div class="updicon"></div></a>
-        <a href="#"><div class="emmeicon"></div></a>
+        <a href="https://teegoobo.com/about">
+            <div class="abtbut"></div>
+        </a>
+        <a href="https://teegeske.github.io/GDES-website-pages/gallery.html">
+            <div class="galicon"></div>
+        </a>
+        <a href="https://teegoobo.com/linkpage">
+            <div class="linkicon"></div>
+        </a>
+        <a href="https://teegoobo.com/site_updates">
+            <div class="updicon"></div>
+        </a>
+        <a href="https://teegeske.github.io/GDES-website-pages/emailme.html">
+            <div class="emmeicon"></div>
+        </a>
+    </section>
+</div>
+<div id="parent">
+    <section class="topfiller" style="height: 25px;"></section>
+    <section class="main-content-area">
+        <section class="videoframe"></section>
+        <section class="videobox">
+            <video id="vidworms" width="720px;">
+                <source src="draw/videos/wormsndirt.mp4" type="video/mp4">
+                <source src="draw/videos/wormsndirt.mp4" type="video/ogg">
+            </video>
+        </section>
+        <section class="vidbuttons">
+            <button class="vidtoothA" onclick="playVideo()"> <img src="img/assets/videobuttons/play.png" alt="play button"> </button>
+            <button class="vidtoothB" onclick="pauseVideo()"><img src="img/assets/videobuttons/pause.png" alt="pause button"></button>
+        </section>
+    </section>
+    <section class="footer">
+        <section class="copyright"></section>
     </section>
 </div>
 </body>
+<script>
+    const video = document.getElementById("vidworms");
+    function playVideo() {
+        video.play();
+    }
+    function pauseVideo() {
+        video.pause();
+    }
+</script>
 </html>
